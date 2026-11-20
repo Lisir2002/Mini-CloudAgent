@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# 密钥与本地状态(绝对不能提交)
+.node_token
+.env
+*.key
+
+# 沙箱运行产物
+sandbox_work/
+e2e_sandbox_work/
+*.log

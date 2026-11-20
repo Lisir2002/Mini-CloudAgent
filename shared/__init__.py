@@ -1,0 +1,41 @@
+"""共享层:控制面与节点Agent之间的通信契约。"""
+
+from .protocol import (
+    ProtocolError,
+    RpcMessage,
+    RpcRequest,
+    RpcResponse,
+    RpcErrorResponse,
+    RpcNotification,
+    Methods,
+    STREAM_METHODS,
+    ErrorCodes,
+    error_message,
+    build_request,
+    build_response,
+    build_error,
+    build_notification,
+    parse_message,
+    to_json,
+    new_id,
+)
+
+__all__ = [
+    "ProtocolError",
+    "RpcMessage",
+    "RpcRequest",
+    "RpcResponse",
+    "RpcErrorResponse",
+    "RpcNotification",
+    "Methods",
+    "STREAM_METHODS",
+    "ErrorCodes",
+    "error_message",
+    "build_request",
+    "build_response",
+    "build_error",
+    "build_notification",
+    "parse_message",
+    "to_json",
+    "new_id",
+]

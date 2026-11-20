@@ -1,0 +1,10 @@
+# 控制面
+fastapi>=0.110
+uvicorn>=0.27
+
+# 节点Agent / 通信
+websockets>=13.0
+aiohttp>=3.9
+
+# 说明:沙箱执行Python代码依赖本机已装 python3。
+# Docker 后端可选,需本机安装 Docker;无 Docker 时自动降级为本地进程沙箱。
