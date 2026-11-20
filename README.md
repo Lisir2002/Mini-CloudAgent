@@ -28,6 +28,7 @@
 | `node_agent/` | 节点Agent:主动外连、心跳、沙箱调度;含 Docker/本地两种沙箱 —— 自研 |
 | `model_gateway/` | 模型网关:OpenAI / Anthropic / Gemini 三协议适配器 —— 自研 |
 | `demo/` | 端到端联调脚本 |
+| `app/` | Expo 移动端 App(配置模型 + 对话 + Agent 沙箱调用)|
 
 ## 模型网关:协议无关,用户自定义厂商
 
@@ -112,5 +113,6 @@ PAIR_CODE=DEMO2026 CONTROL_URL=ws://<你的控制面>:8000/ws/node python -m nod
 - [x] 控制面(注册/心跳/路由/配对码)
 - [x] 模型网关(OpenAI/Anthropic/Gemini 三协议)
 - [x] 端到端联调验证
+- [x] App 客户端(Expo,三协议模型 + Agent 沙箱调用 + 真机联调文档见 `app/README.md`)
 - [ ] 手机本地沙箱接入(预留接口)
-- [ ] App 客户端
+- [ ] App 打包上架 / 生产级配对码后端

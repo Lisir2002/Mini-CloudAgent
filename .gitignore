@@ -15,3 +15,9 @@ env/
 sandbox_work/
 e2e_sandbox_work/
 *.log
+
+# App
+app/node_modules/
+app/.expo/
+app/dist/
+app/web-build/
